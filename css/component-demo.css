@@ -1,0 +1,35 @@
+.component-board {
+  display: grid;
+  gap: 1rem;
+}
+
+.component-instance {
+  display: grid;
+  gap: 1rem;
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: color-mix(in srgb, var(--bg-soft), transparent 12%);
+  border: 1px solid color-mix(in srgb, var(--muted), transparent 75%);
+}
+
+.counter-value {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.todo-list {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: calc(var(--radius) - 8px);
+  padding: 0.75rem;
+  background: color-mix(in srgb, var(--card), transparent 12%);
+}

@@ -1,0 +1,20 @@
+.state-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.state-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.state-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.state-json {
+  min-height: 240px;
+}

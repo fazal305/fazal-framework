@@ -1,0 +1,28 @@
+.theme-controls {
+  display: grid;
+  gap: 1rem;
+}
+
+.token-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preview-strip {
+  display: grid;
+  gap: 1rem;
+}
+
+.preview-card {
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: var(--card);
+  border: 1px solid color-mix(in srgb, var(--muted), transparent 75%);
+}
+
+.theme-log {
+  max-height: 260px;
+  overflow: auto;
+}

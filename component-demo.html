@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazal Framework | Component Demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/component-demo.css" />
+</head>
+
+<body>
+    <div class="app-shell" data-shell>
+        <main class="main-content">
+            <header class="page-header">
+                <span class="eyebrow">Component Subsystem</span>
+                <h1 class="page-title">Component Demo</h1>
+                <p class="page-subtitle">
+                    Components are defined once, mounted into the DOM, keep their own state,
+                    re-render on state changes, and can be destroyed.
+                </p>
+            </header>
+
+            <section class="grid grid-2 mb-4">
+                <div class="card-panel">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3">
+                        <div>
+                            <h2>Counter Instances</h2>
+                            <p class="muted mb-0">Two counters use the same definition but separate state.</p>
+                        </div>
+                        <button class="btn-theme" id="mountCounterBtn">Mount Another Counter</button>
+                    </div>
+
+                    <div class="component-board" id="counterMountArea"></div>
+                </div>
+
+                <div class="card-panel">
+                    <h2>Todo Component</h2>
+                    <p class="muted">A second component definition with its own internal list state.</p>
+                    <div id="todoMountArea"></div>
+                </div>
+            </section>
+
+            <section class="card-panel">
+                <h2>Lifecycle Log</h2>
+                <p class="muted">This proves onMount, onUpdate, and onDestroy are really running.</p>
+                <div class="event-log" id="componentLog"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="framework/fazal-event-bus.js"></script>
+    <script src="framework/fazal-state.js"></script>
+    <script src="framework/fazal-theme-engine.js"></script>
+    <script src="framework/fazal-router.js"></script>
+    <script src="framework/fazal-component.js"></script>
+    <script src="framework/fazal-plugin-system.js"></script>
+    <script src="framework/fazal-framework.js"></script>
+
+    <script src="js/shared.js"></script>
+    <script src="js/component-demo.js"></script>
+</body>
+
+</html>

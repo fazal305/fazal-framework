@@ -1,0 +1,43 @@
+.module-status {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem;
+  border-radius: calc(var(--radius) - 8px);
+  background: color-mix(in srgb, var(--bg-soft), transparent 12%);
+  border: 1px solid color-mix(in srgb, var(--muted), transparent 78%);
+}
+
+.status-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--danger);
+}
+
+.status-dot.ready {
+  background: var(--success);
+}
+
+.quick-card {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quick-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--primary), transparent 35%);
+}
+
+.module-number {
+  color: var(--primary);
+  font-weight: 800;
+}

@@ -1,0 +1,43 @@
+.docs-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1rem;
+}
+
+.docs-nav {
+  position: sticky;
+  top: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.docs-link {
+  padding: 0.7rem 0.85rem;
+  border-radius: calc(var(--radius) - 8px);
+  color: var(--muted);
+  background: color-mix(in srgb, var(--card), transparent 14%);
+}
+
+.docs-link:hover {
+  color: var(--text);
+  background: color-mix(in srgb, var(--primary), transparent 82%);
+}
+
+.method-card {
+  margin-bottom: 1rem;
+}
+
+.method-signature {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+@media (max-width: 992px) {
+  .docs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .docs-nav {
+    position: relative;
+  }
+}

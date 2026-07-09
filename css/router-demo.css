@@ -1,0 +1,28 @@
+.router-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.router-mini-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--secondary), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--secondary), transparent 55%);
+}
+
+.router-view {
+  min-height: 260px;
+}
+
+.route-readout {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.route-param {
+  color: var(--primary);
+  font-weight: 800;
+}

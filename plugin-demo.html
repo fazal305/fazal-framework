@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazal Framework | Plugin Demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/plugin-demo.css" />
+</head>
+
+<body>
+    <div class="app-shell" data-shell>
+        <main class="main-content">
+            <header class="page-header">
+                <span class="eyebrow">Plugin Subsystem</span>
+                <h1 class="page-title">Plugin System Demo</h1>
+                <p class="page-subtitle">
+                    Toggle real plugins at runtime. The Logger Plugin listens to framework hooks,
+                    and the Persistence Plugin saves demo state into localStorage.
+                </p>
+            </header>
+
+            <section class="grid grid-2 mb-4">
+                <div class="card-panel">
+                    <h2>Plugin Controls</h2>
+                    <p class="muted">Plugins are registered/unregistered through FazalFramework.Plugins.</p>
+                    <div class="plugin-grid" id="pluginControls"></div>
+                </div>
+
+                <div class="card-panel">
+                    <h2>Demo Store</h2>
+                    <p class="muted">Used to prove plugin hooks can react to state changes.</p>
+                    <div class="state-value" id="pluginStoreValue">0</div>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <button class="btn-theme" id="increaseStoreBtn">Increase Store</button>
+                        <button class="btn-ghost" id="decreaseStoreBtn">Decrease Store</button>
+                        <button class="btn-ghost" id="triggerRouteHookBtn">Trigger Route Hook</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grid grid-2">
+                <div class="card-panel">
+                    <h2>Active Plugins</h2>
+                    <pre id="pluginList">[]</pre>
+                </div>
+
+                <div class="card-panel">
+                    <h2>Plugin Log</h2>
+                    <div class="plugin-log" id="pluginLog"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="framework/fazal-event-bus.js"></script>
+    <script src="framework/fazal-state.js"></script>
+    <script src="framework/fazal-theme-engine.js"></script>
+    <script src="framework/fazal-router.js"></script>
+    <script src="framework/fazal-component.js"></script>
+    <script src="framework/fazal-plugin-system.js"></script>
+    <script src="framework/fazal-framework.js"></script>
+
+    <script src="js/shared.js"></script>
+    <script src="js/plugin-demo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.plugin-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.plugin-card {
+  display: grid;
+  gap: 1rem;
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: color-mix(in srgb, var(--bg-soft), transparent 12%);
+  border: 1px solid color-mix(in srgb, var(--muted), transparent 76%);
+}
+
+.plugin-enabled {
+  border-color: color-mix(in srgb, var(--success), transparent 35%);
+}
+
+.plugin-log {
+  display: grid;
+  gap: 0.55rem;
+  max-height: 360px;
+  overflow: auto;
+}
+
+.plugin-log-entry {
+  padding: 0.75rem;
+  border-radius: calc(var(--radius) - 8px);
+  background: color-mix(in srgb, var(--card), transparent 8%);
+}
