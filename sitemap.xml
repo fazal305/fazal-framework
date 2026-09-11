@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/</loc>
+  </url>
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/api-docs.html</loc>
+  </url>
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/case-studies.html</loc>
+  </url>
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/component-demo.html</loc>
+  </url>
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/event-bus-demo.html</loc>
+  </url>
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/plugin-demo.html</loc>
+  </url>
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/router-demo.html</loc>
+  </url>
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/settings.html</loc>
+  </url>
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/state-demo.html</loc>
+  </url>
+  <url>
+    <loc>https://fazal305.github.io/fazal-framework/theme-engine-demo.html</loc>
+  </url>
+</urlset>
